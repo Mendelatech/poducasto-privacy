@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poducasto — Open Source Licenses</title>
+<link rel="icon" href="poducasto-logo.png">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; border-bottom: 1px solid #eee; padding-bottom: 0.25rem; }
+  .updated, .intro { color: #444; font-size: 0.95rem; }
+  a { color: #1F3A7A; }
+  footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.92rem; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { color: #666; font-weight: 600; }
+  .site-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .site-header img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+  .back-link { display: inline-block; margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+  <div class="site-header">
+    <img src="mendelatech-chibi.png" alt="Mendelatech" width="44" height="44">
+    <a href="index.html">← Privacy Policy</a>
+  </div>
+
+  <h1>Open Source Licenses — Poducasto</h1>
+  <p class="updated">Last updated: September 23, 2026</p>
+  <p class="intro">Poducasto is built with the help of the following open source and third-party libraries and models. We're grateful to their authors and maintainers. Each one is used under the terms of its own license, linked below.</p>
+
+  <h2>MIT License</h2>
+  <table>
+    <tr><th>Library / model</th><th>Purpose in Poducasto</th></tr>
+    <tr><td>whisper.cpp and ggml (Georgi Gerganov and contributors)</td><td>Runs speech recognition on your device. Bundled as native code.</td></tr>
+    <tr><td>OpenAI Whisper model weights (ggml conversion)</td><td>The speech recognition model itself, downloaded on first use.</td></tr>
+  </table>
+  <p><a href="https://github.com/ggml-org/whisper.cpp/blob/master/LICENSE" target="_blank" rel="noopener">whisper.cpp license</a> · <a href="https://github.com/openai/whisper/blob/main/LICENSE" target="_blank" rel="noopener">Whisper license</a></p>
+
+  <h2>Apache License 2.0</h2>
+  <p class="intro">The rest of Poducasto's foundation is licensed under the Apache License, Version 2.0.</p>
+  <table>
+    <tr><th>Library</th><th>Publisher</th></tr>
+    <tr><td>Kotlin standard library, Kotlin Coroutines, kotlinx.serialization</td><td>JetBrains</td></tr>
+    <tr><td>AndroidX Core, AppCompat, Lifecycle, Activity, Navigation</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>AndroidX Compose (UI, Material 3, Material Icons Extended)</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>AndroidX Room, DataStore</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>AndroidX Media3 (ExoPlayer, UI, Common)</td><td>Google / The Android Open Source Project</td></tr>
+    <tr><td>Material Components for Android</td><td>Google</td></tr>
+  </table>
+  <p><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Full text of the Apache License 2.0</a></p>
+
+  <h2>Google Play Services / ML Kit</h2>
+  <table>
+    <tr><th>Library</th><th>Purpose in Poducasto</th></tr>
+    <tr><td>ML Kit Translate</td><td>On-device subtitle translation, only when you use it. Downloads a language model via Google Play Services; the text is translated locally on your device and is never sent anywhere.</td></tr>
+  </table>
+  <p>Distributed by Google under its own SDK terms rather than an OSI-approved open source license.</p>
+  <p><a href="https://developers.google.com/android/guides/opensource" target="_blank" rel="noopener">Google Play Services open source notices</a> · <a href="https://developers.google.com/terms" target="_blank" rel="noopener">Google APIs Terms of Service</a></p>
+
+  <h2>External services (not bundled code, but worth crediting)</h2>
+  <table>
+    <tr><th>Service</th><th>Used for</th></tr>
+    <tr><td><a href="https://huggingface.co/ggerganov/whisper.cpp" target="_blank" rel="noopener">Hugging Face</a></td><td>Hosting the Whisper model file that the app downloads on first use. See the <a href="index.html">Privacy Policy</a>.</td></tr>
+  </table>
+
+  <a class="back-link" href="index.html">← Back to the Privacy Policy</a>
+  <footer>Poducasto — developed by Mendelatech</footer>
+</body>
+</html>

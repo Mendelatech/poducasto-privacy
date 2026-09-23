@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poducasto — Privacy Policy</title>
+<link rel="icon" href="poducasto-logo.png">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
+  a { color: #1F3A7A; }
+  footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+  select#langSelect { font-size: 0.95rem; padding: 6px 10px; border-radius: 6px; border: 1px solid #ccc; background: #fff; }
+  .lang-block[hidden] { display: none; }
+  .site-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .site-header .logos { display: flex; gap: 10px; }
+  .site-header img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+</style>
+</head>
+<body>
+  <div class="site-header">
+    <div class="logos">
+      <img src="poducasto-logo.png" alt="Poducasto" width="44" height="44">
+      <img src="mendelatech-chibi.png" alt="Mendelatech" width="44" height="44">
+    </div>
+    <select id="langSelect" aria-label="Language / Idioma">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <div id="en" class="lang-block" lang="en">
+    <h1>Privacy Policy — Poducasto</h1>
+    <p class="updated">Last updated: September 23, 2026</p>
+    <h2>No account, no personal data collection</h2>
+    <p>Poducasto transcribes audio and video files with AI, entirely on your device. It does not require an account, and it does not collect, sell, or share your personal information.</p>
+    <h2>Your files and transcripts stay on your device</h2>
+    <p>You choose which file to import using Android's own file picker, so the app only gets access to the files you pick. The audio is decoded and transcribed locally by an on-device speech recognition model (Whisper, running through whisper.cpp). The resulting transcripts, and a local playback copy of the audio when needed, are stored only in the app's private storage on your device — nothing is uploaded to any server. Deleting a transcript in the app removes it, along with that local copy; your original file is never modified or deleted.</p>
+    <h2>Downloads (the only internet use)</h2>
+    <p>The first time you transcribe, Poducasto downloads the Whisper speech recognition model file from <a href="https://huggingface.co/ggerganov/whisper.cpp" target="_blank" rel="noopener">Hugging Face</a> (huggingface.co) over a secure (HTTPS) connection. It's a plain file download: no audio, text, or personal data is sent. If you use subtitle translation, the app downloads an on-device translation language model via Google Play Services (ML Kit) — the text itself is translated locally on your device and is never sent anywhere. Apart from these downloads, the app works fully offline.</p>
+    <h2>Permissions used</h2>
+    <p>Poducasto uses the following device permissions: internet access (only to download the models described above), notifications (to show transcription progress), a foreground service and wake lock (so a long transcription keeps running while the screen is off or you use other apps), and, only if you tap the button in Settings, a request to exempt the app from battery optimization for the same reason. No analytics, advertising, or tracking services are used.</p>
+    <h2>Legal notice</h2>
+    <p>Poducasto is a tool for transcribing files you already have on your device. It doesn't host, store, or distribute any content. You are responsible for making sure you have the right to use the files you transcribe; transcripts are meant for personal use.</p>
+    <h2>Contact</h2>
+    <p>Questions or requests regarding your data? Contact: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
+    <p><a href="licenses.html">Open source licenses</a></p>
+    <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Our links</a></p>
+    <footer>Poducasto — developed by Mendelatech</footer>
+  </div>
+
+  <div id="es" class="lang-block" lang="es" hidden>
+    <h1>Política de privacidad — Poducasto</h1>
+    <p class="updated">Última actualización: 23 de septiembre de 2026</p>
+    <h2>Sin cuenta, sin recopilación de datos personales</h2>
+    <p>Poducasto transcribe archivos de audio y vídeo con IA, íntegramente en tu dispositivo. No requiere cuenta y no recopila, vende ni comparte tu información personal.</p>
+    <h2>Tus archivos y transcripciones se quedan en tu dispositivo</h2>
+    <p>Tú eliges qué archivo importar mediante el selector de archivos del propio Android, así que la app solo tiene acceso a los archivos que tú escoges. El audio se decodifica y se transcribe localmente con un modelo de reconocimiento de voz que funciona en el dispositivo (Whisper, a través de whisper.cpp). Las transcripciones resultantes, y una copia local del audio para reproducirlo cuando hace falta, se guardan únicamente en el almacenamiento privado de la app en tu dispositivo: no se sube nada a ningún servidor. Al borrar una transcripción en la app se elimina junto con esa copia local; tu archivo original nunca se modifica ni se borra.</p>
+    <h2>Descargas (el único uso de internet)</h2>
+    <p>La primera vez que transcribes, Poducasto descarga el archivo del modelo de reconocimiento de voz Whisper desde <a href="https://huggingface.co/ggerganov/whisper.cpp" target="_blank" rel="noopener">Hugging Face</a> (huggingface.co) mediante una conexión segura (HTTPS). Es una simple descarga de archivo: no se envía audio, texto ni datos personales. Si usas la traducción de subtítulos, la app descarga un modelo de traducción en el dispositivo a través de Google Play Services (ML Kit): el texto se traduce localmente en tu dispositivo y nunca se envía a ningún sitio. Aparte de estas descargas, la app funciona completamente sin conexión.</p>
+    <h2>Permisos utilizados</h2>
+    <p>Poducasto utiliza los siguientes permisos del dispositivo: acceso a internet (solo para descargar los modelos descritos arriba), notificaciones (para mostrar el progreso de la transcripción), un servicio en primer plano y bloqueo de activación (para que una transcripción larga siga en marcha con la pantalla apagada o mientras usas otras apps) y, solo si pulsas el botón correspondiente en Ajustes, una solicitud para excluir la app de la optimización de batería por el mismo motivo. No se utilizan servicios de analítica, publicidad ni rastreo.</p>
+    <h2>Aviso legal</h2>
+    <p>Poducasto es una herramienta para transcribir archivos que ya tienes en tu dispositivo. No aloja, almacena ni distribuye ningún contenido. Eres responsable de asegurarte de que tienes derecho a usar los archivos que transcribes; las transcripciones están pensadas para uso personal.</p>
+    <h2>Contacto</h2>
+    <p>¿Dudas o solicitudes sobre tus datos? Contacto: <a href="mailto:mendelatech.greeting513@passinbox.com">mendelatech.greeting513@passinbox.com</a></p>
+    <p><a href="licenses.html">Licencias de código abierto</a></p>
+    <p><a href="https://mendelatech.github.io/" target="_blank" rel="noopener">Nuestros enlaces</a></p>
+    <footer>Poducasto — desarrollado por Mendelatech</footer>
+  </div>
+
+<script>
+(function () {
+  var supported = ["en","es"];
+  var select = document.getElementById("langSelect");
+
+  function normalize(tag) {
+    if (!tag) return null;
+    var base = tag.toLowerCase().split("-")[0];
+    return supported.indexOf(base) !== -1 ? base : null;
+  }
+
+  function show(code) {
+    supported.forEach(function (c) {
+      var el = document.getElementById(c);
+      if (el) el.hidden = (c !== code);
+    });
+    select.value = code;
+    document.documentElement.lang = code;
+  }
+
+  var browserMatch = null;
+  if (navigator.languages) {
+    for (var i = 0; i < navigator.languages.length && !browserMatch; i++) {
+      browserMatch = normalize(navigator.languages[i]);
+    }
+  }
+  if (!browserMatch) browserMatch = normalize(navigator.language);
+
+  show(browserMatch || "en");
+
+  select.addEventListener("change", function () {
+    show(select.value);
+  });
+})();
+</script>
+</body>
+</html>
